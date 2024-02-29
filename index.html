@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class=" container mx-auto">
+    <header>
+
+        <div class=" flex flex-col sm:flex-row justify-center items-center sm:justify-between  container mx-auto mt-10">
+            <div>
+                <h1 class=" text-6xl font-bold font-mono">Hot Gadgets</h1>
+            </div>
+            <div> <button class=" btn btn-primary sm:grid grid-rows-1"> Sign In</button> </div>
+
+        </div>
+    </header>
+    <main class=" container mx-auto text-center mt-6">
+
+
+        <h1 class=" text-6xl">Apple Iphone 13 Pro Max</h1>
+        <p class=" mt-7 mb-7">There are many variations of passages of Lorem Ipsum available, but the
+            majority have
+            suffered
+            alteration in
+            some form, by injected humou.</p>
+        <button class=" btn btn-primary">Buy Now</button>
+        <!-- Search -->
+
+        <div>
+            <input id="text-input" type="text" placeholder="Search....." class="input input-bordered w-full max-w-xs" />
+            <button class=" btn btn-success" onclick="handleSearch()">Search</button>
+        </div>
+        <!-- loading -->
+
+        <section>
+            <div id="loading" class=" hidden">
+                <span class="loading loading-spinner text-info mt-10 w-24"></span>
+            </div>
+        </section>
+
+        <!-- card section -->
+        <section>
+            <div id="phone-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9">
+            </div>
+            <!-- Show All Button -->
+            <div id="show-all-container" class=" hidden">
+                <button class=" btn btn-accent mt-20 mb-20" id="show-all-btn">Show All</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="node.js"></script>
+</body>
+
+</html>
